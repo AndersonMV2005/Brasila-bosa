@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página con Imagen Centrada</title>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #424141;
+    }
+
+    .centered-image {
+        max-width: 80%;
+        max-height: 80%;
+        box-shadow: 0 0 50px rgb(153, 0, 255); /* sombra morada */
+        animation: fade-shadow 2s infinite; /* animación de sombra */
+    }
+
+    @keyframes fade-shadow {
+        0% {
+            box-shadow: 0 0 0 rgb(153, 0, 255); /* desvanecer la sombra */
+        }
+        50% {
+            box-shadow: 0 0 50px rgb(153, 0, 255); /* sombra normal */
+        }
+        100% {
+            box-shadow: 0 0 0 rgb(153, 0, 255); /* desvanecer la sombra */
+        }
+    }
+
+    h1 {
+        font-size: 2em;
+        animation: scale-title 2s infinite alternate;
+    }
+
+    @keyframes scale-title {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.2);
+        }
+    }
+</style>
+</head>
+<body>
+    <h1></h1>
+    <img class="centered-image" src="WhatsApp Image 2024-05-19 at 1.32.57 PM.jpeg" alt="Imagen centrada">
+    <h4>En esta imagen se muestra los tiempos donde se completaron  objetivos del proyectos, Tambien se muestra cuando se cumpliran los siguientes objetivos</h4>
+</body>
+</html>
